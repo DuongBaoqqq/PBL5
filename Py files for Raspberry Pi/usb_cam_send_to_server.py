@@ -35,3 +35,5 @@ def start_camera(on_capture_image , on_exit) :
     cv2.destroyAllWindows()
     cap.release()
     on_exit()
+
+# changing comment
