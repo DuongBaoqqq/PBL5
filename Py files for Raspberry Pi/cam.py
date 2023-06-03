@@ -46,8 +46,8 @@ def start_camera(on_capture_image , on_exit):
         if key == ord("q"):
             break
         button_state = GPIO.input(12)
-        if button_state = False:
-            print("Nut nhan da duoc nhan")
+        if button_state == False:
+            print("Nut nhan da duoc nhan. Okela")
             time.sleep(0.2)
             if len(image) >0 and len(image[0])>0:
                 img_encode = cv2.imencode('.jpg', image)[1]
